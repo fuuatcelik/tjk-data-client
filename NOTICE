@@ -1,0 +1,6 @@
+This project is an independent, unofficial client and is not affiliated with or endorsed by Türkiye Jokey Kulübü (TJK).
+
+The public service paths and expected response concepts were informed by the MIT-licensed “tjk-api” project:
+Copyright (c) 2025 Bilal Eren — https://github.com/bilaleren/tjk-api
+
+No authentication key is included. Users must obtain and use credentials lawfully and comply with the upstream service terms.

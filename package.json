@@ -1,0 +1,37 @@
+{
+  "name": "tjk-data-client",
+  "version": "0.1.0",
+  "description": "Modern, typed and dependency-free Node.js client for TJK race data services.",
+  "type": "module",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "files": ["dist", "README.md", "LICENSE", "NOTICE"],
+  "engines": { "node": ">=18" },
+  "sideEffects": false,
+  "scripts": {
+    "build": "tsup src/index.ts --format esm,cjs --dts --clean",
+    "check": "npm run typecheck && npm run test && npm run build",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "typecheck": "tsc --noEmit",
+    "prepublishOnly": "npm run check"
+  },
+  "keywords": ["tjk", "horse-racing", "turkiye", "typescript", "api-client"],
+  "license": "MIT",
+  "repository": { "type": "git", "url": "git+https://github.com/YOUR_USERNAME/tjk-data-client.git" },
+  "bugs": { "url": "https://github.com/YOUR_USERNAME/tjk-data-client/issues" },
+  "homepage": "https://github.com/YOUR_USERNAME/tjk-data-client#readme",
+  "devDependencies": {
+    "tsup": "^8.5.0",
+    "typescript": "^5.9.3",
+    "vitest": "^4.0.3"
+  }
+}
